@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brake Hill Barns Weather</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" href="./assets/favicon.ico">
 </head>
 <body>
-    <div class="weather-app">
-        <header>
-            <img src="./assets/brakehill-logo.png" alt="Brake Hill Barns" class="logo">
-            <h1>Farm Weather Dashboard</h1>
+    <div class="app-container">
+        <header class="app-header">
+            <img src="./src/assets/cropped-brakehill-barns-logo.jpg" alt="Brake Hill Barns" class="logo">
+            <h1>Farm Weather</h1>
         </header>
-        <main id="weather-container">
-            <!-- Weather data will appear here -->
+        
+        <main class="weather-card">
+            <div class="weather-display" id="weather-container">
+                <!-- Weather data loads here -->
+            </div>
+            
+            <div class="farm-activities" id="farm-tips">
+                <!-- Activity tips load here -->
+            </div>
         </main>
-        <div class="farm-tips" id="farm-tips"></div>
+        
+        <footer class="app-footer">
+            <p>Updated: <span id="update-time">Just now</span></p>
+        </footer>
     </div>
     <script src="./src/main.js"></script>
 </body>
