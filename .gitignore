@@ -1,0 +1,7 @@
+# API Keys
+appsettings*.json
+
+# Folders to ignore
+bin/
+obj/
+.vs/
