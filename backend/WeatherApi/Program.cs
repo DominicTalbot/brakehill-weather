@@ -12,10 +12,9 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 // Add CORS
-builder.Services.AddCors(options => 
-{
+builder.Services.AddCors(options => {
     options.AddPolicy("AllowAll", policy => 
-        policy.WithOrigins("http://localhost:3000")  // Your frontend URL
+        policy.AllowAnyOrigin()
               .AllowAnyMethod()
               .AllowAnyHeader());
 });
